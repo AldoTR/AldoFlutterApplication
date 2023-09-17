@@ -21,7 +21,7 @@ Para ello ejecuta los siguientes pasos:
 1.- dart pub global activate flutterfire_cli =>Para instalar la consola de firebase para flutter, esta linea te dara como resultado una
     ruta de quederas exportar, o ingresar al archivo de inicio del shell para añadir el path.
 
-2.- echo '<export PATH="$PATH:path_to_flutter_directory/flutter/bin">' >> $HOME/.bashrc remplaza lo que esta entre <> con el comando
+2.- echo <'export PATH="$PATH:path_to_flutter_directory/flutter/bin"'> >> $HOME/.bashrc remplaza lo que esta entre <> con el comando
     que te retorno la linea 1.
 
 3.- Para confirmar si se ingreso correctamente reinicia tu computador y ejecuta echo $PATH
