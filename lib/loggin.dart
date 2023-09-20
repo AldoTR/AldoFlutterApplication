@@ -83,6 +83,32 @@ class _LoginFormState extends State<LoginForm> {
                         },
                         child: Text('¿No tienes una cuenta? Regístrate'),
                     ),
+                    Text(
+                      "\nOr\n"
+                    ),
+                    SizedBox(
+                      width:250,
+                      child:ElevatedButton(
+                        onPressed: () async{
+                        // Lógica de inicio de sesión aquí
+                            await signInWithGoogle();
+                            final bandera=await googleAccess();
+                            if(bandera){
+                                Navigator.pushReplacementNamed(context, "/");
+                            }
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children:<Widget>[
+                            Text(
+                              "Loggin with google "
+                            ),
+                            Image.asset('assets/google.png'),
+                          ],
+                        ),
+                    ),
+                    ),
+                    
                 ],
             ),
         ),

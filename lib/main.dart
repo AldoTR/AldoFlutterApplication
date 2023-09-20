@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       create: (context) => MyAppState(),
       child: MaterialApp(
         title: 'Namer App',
+        debugShowCheckedModeBanner: false,
         initialRoute: "/",
         theme: ThemeData(
           useMaterial3: true,

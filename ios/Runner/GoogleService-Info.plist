@@ -2,18 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>114154558680-8hsjddd0fpvdb6ja94ouct2855inu55h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.114154558680-8hsjddd0fpvdb6ja94ouct2855inu55h</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBbU6cEnK0WOKCqk_a_850a_NTF7UC-r18</string>
+	<string>AIzaSyCgp32lfVfT6lUubB8KfJM0-34-SpJvod8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1096107413937</string>
+	<string>114154558680</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.myapp</string>
+	<string>aldoapp.myapp</string>
 	<key>PROJECT_ID</key>
-	<string>misclientes-aab01</string>
+	<string>aldo-flutter</string>
 	<key>STORAGE_BUCKET</key>
-	<string>misclientes-aab01.appspot.com</string>
+	<string>aldo-flutter.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1096107413937:ios:8265308aa9339b1c8ced90</string>
-	<key>DATABASE_URL</key>
-	<string>https://misclientes-aab01-default-rtdb.firebaseio.com</string>
+	<string>1:114154558680:ios:44cf3eccc32b78c97133ad</string>
 </dict>
 </plist>

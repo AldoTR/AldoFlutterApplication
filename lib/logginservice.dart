@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';//Esta linea es para importar 
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
 
 
 Future<void> initfirebase() async{
@@ -53,11 +55,6 @@ Future<void> createAccount(emailAddress, pwd, confirmpwd) async {
 }
 
 Future<String?> isLoggin() async{
-    /*if (FirebaseAuth.instance.currentUser != null) {
-        return true;
-    }else{
-        return false;
-    }*/
     SharedPreferences prefs = await SharedPreferences.getInstance();
     var email=await prefs.getString('user');
     return email;
@@ -73,4 +70,34 @@ Future<bool> logout() async{
         return false;
     }
     
+}
+
+Future<UserCredential> signInWithGoogle() async {
+        // Trigger the authentication flow
+        final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+        // Obtain the auth details from the request
+        final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+
+        // Create a new credential
+        final credential = GoogleAuthProvider.credential(
+            accessToken: googleAuth?.accessToken,
+            idToken: googleAuth?.idToken,
+        );
+    
+        // Once signed in, return the UserCredential
+        return await FirebaseAuth.instance.signInWithCredential(credential);
+}
+
+Future<bool> googleAccess() async{
+    if (FirebaseAuth.instance.currentUser != null) {
+        final email=FirebaseAuth.instance.currentUser?.email;
+        SharedPreferences prefs = await SharedPreferences.getInstance();
+        if(email!=null){
+            await prefs.setString('user', email);
+        }
+        return true;
+    }else{
+        return false;
+    }
 }

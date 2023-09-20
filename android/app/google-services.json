@@ -1,35 +1,41 @@
 {
   "project_info": {
-    "project_number": "1096107413937",
-    "firebase_url": "https://misclientes-aab01-default-rtdb.firebaseio.com",
-    "project_id": "misclientes-aab01",
-    "storage_bucket": "misclientes-aab01.appspot.com"
+    "project_number": "114154558680",
+    "project_id": "aldo-flutter",
+    "storage_bucket": "aldo-flutter.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1096107413937:android:411b9102a5d73ad28ced90",
+        "mobilesdk_app_id": "1:114154558680:android:6d28b1c3483938d47133ad",
         "android_client_info": {
           "package_name": "com.example.myapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1096107413937-ou3vjhq0rs14f2bkmoevm4aesv3s937d.apps.googleusercontent.com",
+          "client_id": "114154558680-54j9m134p91dqorqvnm6ns5d0dnrdc8a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCNSr-d1yEoai0gtuIaUfxYyb0P5xpYy94"
+          "current_key": "AIzaSyADPciTnyLdKtzNuM5FdW2nNiAYMhHti7E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1096107413937-ou3vjhq0rs14f2bkmoevm4aesv3s937d.apps.googleusercontent.com",
+              "client_id": "114154558680-54j9m134p91dqorqvnm6ns5d0dnrdc8a.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "114154558680-5li31cfblavns98k5rc9u3omtse9cv3p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.myapp.RunnerTests"
+              }
             }
           ]
         }
